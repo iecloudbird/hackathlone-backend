@@ -1,0 +1,6 @@
+*.env
+supabase/.temp
+supabase/config.toml
+
+node_modules/
+package-lock.json
