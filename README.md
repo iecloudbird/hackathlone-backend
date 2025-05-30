@@ -42,6 +42,9 @@ The `hackathlone-backend` provides API services to support the HackAthlone appli
 supabase link --project-ref iabynsixhpfbceluzvvs
 ```
 
+> [!IMPORTANT]
+> Database password will be prompted after below step, reach out to project owner for secret acess
+
 If not already logged in, authenticate with the Supabase CLI:
 
 ```bash
