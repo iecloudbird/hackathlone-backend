@@ -19,7 +19,7 @@ The `hackathlone-backend` provides API services to support the HackAthlone appli
 
 - [Node.js](https://nodejs.org/) (v16 or higher)
 - [Supabase CLI](https://supabase.com/docs/guides/cli) (Install with `npm install -g @supabase/supabase-cli`)
-- A Supabase account and project (use the credentials above)
+- If you are running Supabase locally, see the [Supabase Container tool](https://supabase.com/docs/guides/local-development/cli/getting-started?queryGroups=platform&platform=npm&queryGroups=access-method&access-method=studio#running-supabase-locally)for Docker config or alternative tools.
 
 ### Installation
 
