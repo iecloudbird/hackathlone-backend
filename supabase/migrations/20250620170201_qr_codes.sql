@@ -10,12 +10,12 @@ CREATE TABLE qr_codes (
 
 ALTER TABLE qr_codes ENABLE ROW LEVEL SECURITY;
 
-CREATE POLICY "Staff can manage QR codes" ON qr_codes
+CREATE POLICY "Admin can manage QR codes" ON qr_codes
   FOR ALL
   TO authenticated
   USING (EXISTS (
-    SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'staff'
+    SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'admin'
   ))
   WITH CHECK (EXISTS (
-    SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'staff'
+    SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'admin'
   ));

@@ -14,7 +14,7 @@ BEGIN
 EXCEPTION
     WHEN OTHERS THEN
         RAISE NOTICE 'Error generating QR code for user %: %', user_id, SQLERRM;
-        RETURN NULL; -- In case of error, return NULL
+        RETURN NULL; -- In case of error return null
 END;
 $$ LANGUAGE plpgsql;
 
