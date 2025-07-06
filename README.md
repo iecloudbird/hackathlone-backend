@@ -42,6 +42,17 @@ The `hackathlone-backend` provides API services to support the HackAthlone appli
 supabase link --project-ref iabynsixhpfbceluzvvs
 ```
 
+4. Pull remote schema
+
+```bash
+supabase db pull
+```
+Pulling data? 
+```bash
+supabase db dump --data-only
+```
+
+
 > [!IMPORTANT]
 > Database password will be prompted after below step, reach out to project owner for secret acess
 
